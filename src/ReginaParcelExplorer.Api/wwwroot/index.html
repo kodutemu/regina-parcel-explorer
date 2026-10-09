@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Click the map to look up City of Regina property parcels."
+    />
+    <link rel="icon" href="data:," />
+
+    <title>Regina Parcel Explorer</title>
+
+    <script type="module" src="https://js.arcgis.com/5.1/"></script>
+    <link rel="stylesheet" href="/site.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>Regina Parcel Explorer</h1>
+        <p>Click the map to query parcels at that location.</p>
+      </div>
+    </header>
+
+    <main class="map-container">
+      <arcgis-map
+        id="parcel-map"
+        basemap="topo-vector"
+        center="-104.6189, 50.4452"
+        zoom="11"
+        aria-label="Regina parcel map"
+      >
+        <arcgis-zoom slot="top-left"></arcgis-zoom>
+      </arcgis-map>
+
+      <aside id="results-panel" class="results-panel" aria-live="polite">
+        <h2>Parcel Query</h2>
+        <p id="query-status">
+          Click anywhere on the map to find parcels.
+        </p>
+
+        <div id="parcel-results"></div>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      Contains information licensed under the
+      <a
+        href="https://www.regina.ca/city-government/open-data/open-government-licence/"
+        target="_blank"
+        rel="noopener"
+        >Open Government Licence – City of Regina</a
+      >. Not endorsed by the City of Regina.
+    </footer>
+  </body>
+</html>

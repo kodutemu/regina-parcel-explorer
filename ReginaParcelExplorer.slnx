@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ReginaParcelExplorer.Api/ReginaParcelExplorer.Api.csproj" />
+  </Folder>
+  <Folder Name="/validation/">
+    <Project Path="validation/ReginaParcelValidator/ReginaParcelValidator.vbproj" />
+  </Folder>
+</Solution>
