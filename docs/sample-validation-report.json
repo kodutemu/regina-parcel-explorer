@@ -1,0 +1,54 @@
+{
+  "validated_at_utc": "2026-10-09T06:04:20.613651+00:00",
+  "source": {
+    "url": "https://opengis.regina.ca/arcgis/rest/services/CGISViewer/Taxweb/MapServer/0",
+    "retrieved_at_utc": "2026-10-09T06:03:37.762760+00:00",
+    "reported_record_count": 86750,
+    "extracted_record_count": 86750,
+    "actual_feature_count": 86750,
+    "record_count_match": true,
+    "spatial_reference": {
+      "wkid": 26913,
+      "latestWkid": 26913
+    },
+    "spatial_reference_match": true
+  },
+  "geometry": {
+    "status_counts": {
+      "structurally_valid": 86750
+    },
+    "multi_ring_features": 122
+  },
+  "attributes": {
+    "invalid_feature": 0,
+    "invalid_attributes": 0,
+    "missing_source_object_id": 0,
+    "invalid_source_object_id": 0,
+    "duplicate_source_object_id_count": 0,
+    "duplicate_source_object_ids": [],
+    "missing_account": 0,
+    "invalid_account": 0,
+    "zero_account": 31,
+    "missing_address": 31,
+    "missing_loadable_address": 0,
+    "missing_assessment": 31,
+    "invalid_assessment": 0,
+    "negative_assessment": 0,
+    "missing_loadable_assessment": 0,
+    "invalid_loadable_assessment": 0,
+    "negative_loadable_assessment": 0,
+    "duplicate_account_id_count": 1,
+    "duplicate_account_ids": [
+      10207733
+    ],
+    "duplicate_account_excess_records": 1
+  },
+  "failures": [],
+  "warnings": [
+    "zero_account",
+    "missing_address",
+    "missing_assessment",
+    "duplicate_account_ids"
+  ],
+  "status": "PASS_WITH_WARNINGS"
+}
