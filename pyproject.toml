@@ -1,0 +1,11 @@
+[project]
+name = "regina-parcel-explorer"
+version = "0.1.0"
+description = "ETL pipeline that loads City of Regina parcel data into SQL Server for the Regina Parcel Explorer web app."
+requires-python = ">=3.13"
+dependencies = [
+    "mssql-python>=1.15.0",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "shapely>=2.1.2",
+]
